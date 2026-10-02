@@ -14,6 +14,6 @@ window.SITE = {
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
     { href: "hobbies.html", label: "Hobbies" },
-    { href: "assets/resume.pdf", label: "Resume", external: true },
+    { href: "assets/Eliane_Juang_Resume.pdf", label: "Resume", external: true },
   ],
 };
