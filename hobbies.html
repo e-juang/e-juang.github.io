@@ -1,4 +1,3 @@
-cat > hobbies.html << 'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +5,46 @@ cat > hobbies.html << 'EOF'
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hobbies — Eliane Juang</title>
 <meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  site-header,
+  site-footer {
+    display: block;
+  }
+  .wip-main {
+    flex: 1;
+  }
+  .wip-main p {
+    margin: 0 0 1rem;
+  }
+</style>
 </head>
 <body>
 
 <site-header></site-header>
 
-<section class="section-intro" id="hobbies">
-  <div class="wrap">
-    <h2>Hobbies</h2>
-  </div>
-</section>
+<main class="wip-main">
+  <section class="section-intro" id="hobbies">
+    <div class="wrap">
+      <h2>Hobbies</h2>
+    </div>
+  </section>
 
-<section class="block">
-  <div class="wrap">
-    <p>Work in progress. </p>
-    <p><a href="index.html">&larr; Back to home</a></p>
-  </div>
-</section>
+  <section class="block">
+    <div class="wrap">
+      <p>Work in progress. Check back soon.</p>
+      <p><a href="index.html">&larr; Back to home</a></p>
+    </div>
+  </section>
+</main>
 
 <site-footer></site-footer>
 
