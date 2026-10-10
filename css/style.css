@@ -2,13 +2,12 @@
    TOKENS
    ========================================================= */
 :root {
-  --paper:      #FFFFFF;
+  --paper:      #ffffff; /*f2f2f2*/
   --paper-alt:  #F4F3F0;
   --ink:        #163038;
   --ink-soft:   #4C6873;
   --graphite:   #7C97A1;
-  --accent:     #1C74A8;
-  --leaf:       #3E8F62;
+  --accent:     #3F5E52;
   --accent-ink: #FFFFFF;
   --line:       rgba(22, 48, 56, 0.16);
   --line-soft:  rgba(22, 48, 56, 0.08);
@@ -75,7 +74,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   display: block;
   background: var(--paper);
   box-shadow: 0 3px 10px rgba(28, 32, 36, 0.035);
-  border-bottom: 1px solid rgba(28, 116, 168, 0.18);
+  border-bottom: 1px solid rgba(47, 107, 79, 0.18);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -152,7 +151,7 @@ nav.primary-nav a .num {
 }
 
 nav.primary-nav a:hover {
-  color: var(--graphite);
+  color: var(--accent);
   background: transparent;
 }
 
@@ -591,6 +590,36 @@ section.experience-content {
   object-position: 50% 20%;
 }
 
+
+/* Stirling engine: images grouped tightly as one project */
+.project-grid > .project-group {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin: var(--media-spacing) 0;
+}
+
+.project-group .project-media {
+  margin: 0;
+}
+
+.project-card-text {
+  justify-content: center;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .project-grid > .project-group {
+    grid-template-columns: 1fr;
+  }
+  .project-card-text {
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+}
+
+
 /* =========================================================
    CONTACT
    ========================================================= */
@@ -892,7 +921,7 @@ section.experience-content {
 }
 
 .hobby-play:hover {
-  background: rgba(28, 116, 168, 0.4);
+  background: rgba(47, 107, 79, 0.4); 
   transform: translate(-50%, -50%) scale(1.08);
 }
 
@@ -1045,7 +1074,7 @@ body.lightbox-open {
 }
 
 .poster-link:hover {
-  color: #0E5585;
+  color: #1F5239;   /* was #0E5585 */
   transform: translateY(-1px);
 }
 
